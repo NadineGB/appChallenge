@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("Username", usernameET.getText().toString());
         Log.i("Passwort", passwordET.getText().toString());
+
+        Toast.makeText(this, "Hallo " + usernameET.getText().toString(), Toast.LENGTH_LONG).show();
     }
 }
