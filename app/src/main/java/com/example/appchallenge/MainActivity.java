@@ -3,6 +3,7 @@ package com.example.appchallenge;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // TODO: click event auslösen
     }
 
     public void meinClickEvent(View view) {
-        Log.i("info", "Hallo user");
+        EditText username = findViewById(R.id.username);
+        EditText passwort = findViewById(R.id.passwort);
+
+        Log.i("Name", username.getText().toString());
+        Log.i("Passwort", passwort.getText().toString());
     }
 }

@@ -10,7 +10,6 @@
         android:id="@+id/username"
         android:layout_width="293dp"
         android:layout_height="63dp"
-
         android:hint="Dein Name"
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
