@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void meinClickEvent(View view) {
-        EditText username = findViewById(R.id.username);
-        EditText passwort = findViewById(R.id.passwort);
+    public void login(View view) {
+        EditText usernameET = findViewById(R.id.usernameET);
+        EditText passwordET = findViewById(R.id.passwordET);
 
-        Log.i("Name", username.getText().toString());
-        Log.i("Passwort", passwort.getText().toString());
+        Log.i("Username", usernameET.getText().toString());
+        Log.i("Passwort", passwordET.getText().toString());
     }
 }

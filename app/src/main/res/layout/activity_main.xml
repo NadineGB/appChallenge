@@ -7,7 +7,7 @@
     tools:context="com.example.appchallenge.MainActivity">
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/usernameET"
         android:layout_width="293dp"
         android:layout_height="63dp"
         android:hint="Dein Name"
@@ -15,30 +15,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/passwort"
+        app:layout_constraintBottom_toTopOf="@id/passwordET"
         app:layout_constraintVertical_bias="0.5"
         app:layout_constraintVertical_chainStyle="packed"
 
         />
 
     <EditText
-        android:id="@+id/passwort"
+        android:id="@+id/passwordET"
         android:layout_width="293dp"
         android:layout_height="63dp"
         android:hint="Dein Passwort"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/usernameET"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button" />
+        app:layout_constraintBottom_toTopOf="@id/LoginBTN" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/LoginBTN"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:onClick="meinClickEvent"
+        android:onClick="login"
         android:text="Login"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -46,7 +46,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwort" />
+        app:layout_constraintTop_toBottomOf="@id/passwordET" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
